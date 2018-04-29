@@ -1,0 +1,32 @@
+img {
+  border: 1px solid lightgrey;
+  width: 300px;
+}
+
+#container {
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: rgb(228, 165, 130);
+  padding: 10px;
+  width: 300px;
+}
+
+#card {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+#interesting-fact {
+  font-style: italic
+}
+
+#facts {
+  list-style-type: none;
+}
+
+#facts li span {
+  font-weight: bold;
+}
+
+#summary {
+}
