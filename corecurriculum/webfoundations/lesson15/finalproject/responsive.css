@@ -11,6 +11,26 @@
   order: 10;
 }
 
+@media screen and (min-width: 424px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead, tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-th);
+  }
+}
+
 @media screen and (max-width: 549px) {
   .header__logo {
     height: 48px;
@@ -51,6 +71,11 @@
   .header__menu svg {
     width: 32px;
     fill: #E0E0E0;
+  }
+
+  div.contained-table {
+    width: 100%;
+    overflow-x: auto;
   }
 }
 
